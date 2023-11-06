@@ -1,9 +1,6 @@
 //function component
-import   "./notes.css";
-type noteProp ={
-    text:string,
-    priority?:'high' | 'medium' | 'low'
-}
+import   "./note.css";
+import {noteProp} from './note-type'
 function Note(props:noteProp){
     return(
         <div className={`note ${props.priority}`}>
